@@ -68,6 +68,7 @@ public class ApplicationContext<T> {
      */
     public void initContextByAnnotation() {
         // 扫描包 (之前)1.创建注解 2.加注解
+        // 注意:这里类路径不能有空格  即项目路径不能有空格
         filePath = ApplicationContext.class.getClassLoader().getResource("").getFile();
         loadOne(new File(filePath));
         assembleObject();

@@ -20,9 +20,9 @@ public class BootStrap {
         // 第三种方法测试
         //applicationContext.load();
 
-        //applicationContext.initContextByAnnotation();
-        //Object bean = applicationContext.getBean(IBookDao.class);
-        //System.out.println(bean);
+        /*applicationContext.initContextByAnnotation();
+        Object bean = applicationContext.getBean(IBookDao.class);
+        System.out.println(bean);*/
 
         applicationContext.initContextByAnnotation();
         IBookService iBookService = (IBookService)applicationContext.getBean(IBookService.class);
